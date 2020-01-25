@@ -9,14 +9,14 @@ function App() {
     return (
         <Router>
             <nav className="app__nav">
-                <NavLink to='power-1'>Power = 1</NavLink>
-                <NavLink to='power-5'>Power = 5</NavLink>
-                <NavLink to='reversed'>Reversed</NavLink>
-                <NavLink to='center'>Absolute center</NavLink>
-                <NavLink to='static'>Static</NavLink>
+                <NavLink to='/paralax/power-1'>Power = 1</NavLink>
+                <NavLink to='/paralax/power-5'>Power = 5</NavLink>
+                <NavLink to='/paralax/reversed'>Reversed</NavLink>
+                <NavLink to='/paralax/center'>Absolute center</NavLink>
+                <NavLink to='/paralax/static'>Static</NavLink>
             </nav>
-            <Route path='/'><Redirect to='/power-1' /></Route>
-            <Route path='/power-1'>
+            <Route path='/'><Redirect to='/paralax/power-1' /></Route>
+            <Route path='/paralax/power-1'>
                 <ParalaxList>
                     <div className='app'>
                         <InnerComponent />
@@ -31,7 +31,7 @@ function App() {
                     </div>
                 </ParalaxList>
             </Route>
-            <Route path='/power-5'>
+            <Route path='/paralax/power-5'>
                 <ParalaxList>
                     <div className='app'>
                         <InnerComponent />
@@ -46,7 +46,7 @@ function App() {
                     </div>
                 </ParalaxList>
             </Route>
-            <Route path='/reversed'>
+            <Route path='/paralax/reversed'>
                 <ParalaxList>
                     <div className='app'>
                         <InnerComponent />
@@ -61,7 +61,7 @@ function App() {
                     </div>
                 </ParalaxList>
             </Route>
-            <Route path='/center'>
+            <Route path='/paralax/center'>
                 <ParalaxList>
                     <div className='app'>
                         <InnerComponent />
@@ -76,7 +76,7 @@ function App() {
                     </div>
                 </ParalaxList>
             </Route>
-            <Route path='/static'>
+            <Route path='/paralax/static'>
                 <div className='app'>
                     <InnerComponent />
                     <InnerComponent />

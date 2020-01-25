@@ -3,6 +3,8 @@
 React component for creating paralax effect.
 ___
 
+Live demo available [here](https://msulecki.github.io/paralax/)
+
 ## Getting started
 
 Basic usage is to simply wrap ParalaxList and Paralax components around chosen elements:
