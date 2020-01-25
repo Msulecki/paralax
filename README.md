@@ -1,3 +1,46 @@
+# Paralax
+
+React component for creating paralax effect.
+___
+
+## Getting started
+
+Basic usage is to simply wrap ParalaxList and Paralax components around chosen elements:
+
+**1. Import Paralax and ParalaxList components to your project:**
+```javascript
+import { Paralax, ParalaxList } from './Paralax'
+```
+**2. Wrap all inner componens that should get paralax effect in <ParalaxList>, and main component of choice in <Paralax>:**
+```javascript
+<ParalaxList>
+    <div className='app'>
+        <InnerComponent />
+        <InnerComponent />
+        <Paralax>
+            <InnerComponent />
+        </Paralax>
+        <InnerComponent />
+        <InnerComponent />
+    </div>
+</ParalaxList>
+```
+All inner components will become group, and component in **<Paralax>** wrapper will become main component for the effect.
+
+**3. Add some options:**
+```javascript
+<Paralax power={3} reverse centered>
+    <InnerComponent />
+</Paralax>
+```
++ You can choose power of paralax movement from 1 to 10
++ Adding __reverse__ keyword will reverse (of course...) movement of whole group relative to main element
++ Adding __centered__ keyword will move 0,0 point to absolute center of page
++ Omitting __<ParalaxList>__ component will result in static position of group, relative to main element
+
+**TIP:** Putting negative number (from -10 to -1) will get you the same effect as **reverse**
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

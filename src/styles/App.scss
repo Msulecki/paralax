@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
+
+.app {
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  padding-top: 50px;
+
+  &>div:nth-child(5)>div{
+    background-image: linear-gradient(45deg, hsla(200,80,50,.8) 0%,hsla(240,60,50,.8) 100%);
+    & .modal-message{
+      background-image: linear-gradient(45deg, hsla(100,80,50,.6) 0%,hsla(140,60,50,.6) 100%);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsla(0,0,0,.2);
+    
+    & a{
+      margin: 0 10px;
+      padding: 5px;
+    }
+  }
+}
+
+.modal-window {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: hsla(0,0,30,.4);
+  box-shadow: 0 0 40px 0 hsl(0,0,10);
+}
+
+.modal-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  border: 1px solid hsl(0,0,90);
+  color: hsl(0,0,90);
+  font-size: .8rem;
+  cursor: default;
+}

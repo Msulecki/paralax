@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0,0,20);
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0,0,90);
+  margin: 0 10px;
+}
+
+.active {
+  color: hsla(200,80,50,.8);
+  border-bottom: 3px solid hsla(200,80,50,.8);
+}
